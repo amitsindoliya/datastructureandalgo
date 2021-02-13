@@ -27,12 +27,12 @@ def partition(a, lo, hi):
         while a[i] <= a[lo]:
             # print('here')
             i += 1
-            if i == hi:
+            if i >= hi:
                 break
         while a[j] >= a[lo]:
             # print('there')
             j -= 1
-            if j == lo:
+            if j <= lo:
                 break
         if i >= j:
             break
